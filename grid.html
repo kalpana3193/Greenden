@@ -1,0 +1,88 @@
+<style>
+    .section {
+        display: grid;
+        grid-template-rows: 1fr 3fr 1fr;
+        background-color: aquamarine;
+        height: 450px;
+
+    }
+
+    .header,
+    .footer {
+        background-color: aqua;
+        color: white;
+        font-size: 50px;
+        text-align: center;
+        padding: 5px;
+
+
+    }
+
+    .middle {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        margin: 5px;
+        color: white;
+        font-size: 30px;
+
+
+    }
+
+    .aside {
+        background-color: lightgreen;
+        margin: 5px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+    }
+
+    .article {
+        background-color: orange;
+        margin: 5px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        height: 300px;
+        position: relative;
+    }
+
+    .image {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        position: absolute;
+        top: 270px;
+        left: 700px;
+
+    }
+
+    .image h2 {
+        background-color: lightcoral;
+        height: 100px;
+        width: 100px;
+        margin: 5px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+
+    }
+</style>
+<div class="section">
+    <div class="header">Header</div>
+    <div>
+        <div class="middle">
+            <div class="aside">Aside</div>
+
+            <div class="article">
+                Article
+            </div>
+        </div>
+
+        <div class="image">
+            <h2>Image</h2>
+            <h2>Image</h2>
+            <h2>Image</h2>
+        </div>
+
+        <div class="footer">Footer</div>
+    </div>
